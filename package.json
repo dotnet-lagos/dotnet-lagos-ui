@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev -p 5000",
     "build": "next build",
+    "postbuild": "next-on-netlify",
+    "export": "npm run build && next export",
     "start": "next start",
     "lint": "next lint"
   },
