@@ -23,6 +23,9 @@ body {
 .nav-link:hover {
     color: #9112AA !important;
 }
+li.nav-item {
+    padding-left: 30px;
+}
 /* Navbar section end */
 
 /* Hero section */
@@ -38,6 +41,17 @@ body {
     padding: 8px 30px;
     margin-top: 30px;
     color: #FF12DD;
+}
+h1.hero-heading.text-center.mb-4 {
+    font-weight: 800;
+    background-image: radial-gradient(circle, rgba(255,0,214,1) 0%, rgba(136,50,245,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 52px;
 }
 /* Hero section end */
 
@@ -407,3 +421,40 @@ p span {
     cursor: pointer;
 }
 /* Footer section end*/
+
+
+
+
+
+/* Media Query */
+@media (max-width: 780px) {
+    .about__us--image {
+        max-width: 200px;
+    }
+    .mentorship--image {
+        max-width: 200px;
+    }
+}
+@media (max-width: 600px) {
+    .footer-border-top {
+        flex-direction: column !important;
+    }
+    h1.hero-heading.text-center.mb-4 {
+        font-size: 42px;
+    }
+    .event-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .event-one, .event-two, .event-three, .event-four {
+        grid-column: initial;
+        padding: 20px !important;
+    }
+    .event-wrapper > div:nth-child(odd) {
+        padding-left: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .event-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
