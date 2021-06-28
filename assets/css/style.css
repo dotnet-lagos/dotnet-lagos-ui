@@ -457,4 +457,12 @@ p span {
     .event-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
+    .sponsors img {
+        width: 100px;
+        padding-top: 30px;
+    }
+    .sponsors {
+        flex-direction: column !important;
+        align-content: center !important;
+    }
 }
